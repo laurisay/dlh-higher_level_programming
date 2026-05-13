@@ -2,7 +2,7 @@
 def simple_delete(a_dictionary, key=""):
     copy = a_dictionary
     if key in copy:
-        del(copy[key])
+        del copy[key]
     return copy
     """
     anothe solution with .pop() function 🈂️
