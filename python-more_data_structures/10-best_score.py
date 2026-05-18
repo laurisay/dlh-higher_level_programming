@@ -6,14 +6,15 @@ def best_score(a_dictionary):
     else:
         return None
 
-""" ✅
+
+"""
     to return the highest value of a key
     to ask the value -> dictonary[key] -> value
     hig = 0
     for i in dicionary:
         if dictionary[i] > hig:
             hig = dictionary[i]
-    ✅
+    
     to return the key that has the highest value:
         if a_dictionary:
         hig = 0
