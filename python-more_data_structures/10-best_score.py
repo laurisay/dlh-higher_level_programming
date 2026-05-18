@@ -5,5 +5,3 @@ def best_score(a_dictionary):
         return hig
     else:
         return None
-
-
