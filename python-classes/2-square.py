@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-
-"""This module creates a new class Square"""
-
-
 class Square:
     """Class Square with size validation"""
     def __init__(self, size=0):
