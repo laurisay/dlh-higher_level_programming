@@ -1,11 +1,35 @@
-@size.setter
-def size(self, value):
-    """Set the size of square"""
+#!/usr/bin/python3
 
-    if type(value) is not int:
-        raise TypeError("size must be an integer")
+"""
+This module creates a new class Square
+"""
 
-    if value < 0:
-        raise ValueError("size must be >= 0")
 
-    self.__size = value
+class Square:
+    """Defines a square"""
+
+    def __init__(self, size=0):
+        self.size = size
+
+    def area(self):
+        """Return the area of square"""
+
+        return self.__size * self.__size
+
+    @property
+    def size(self):
+        """Return size of square"""
+
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        """Set the size of square"""
+
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+
+        if value < 0:
+            raise ValueError("size must be >= 0")
+
+        self.__size = value
