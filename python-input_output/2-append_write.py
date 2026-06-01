@@ -1,26 +1,19 @@
 #!/usr/bin/python3
 """
-Module that creates a read_lines function
+Module that creates an append_write function
 """
 
 
-def read_lines(filename="", nb_lines=0):
-    """[summary]
+def append_write(filename="", text=""):
+    """Appends a string at the end of a text file (UTF8)
+    and returns the number of characters added
 
     Args:
-        filename (str, optional): [description]. Defaults to "".
-        nb_lines (int, optional): [description]. Defaults to 0.
+        filename (str, optional): The file to append to. Defaults to "".
+        text (str, optional): The text to append. Defaults to "".
+    
+    Returns:
+        int: Number of characters added
     """
-    with open(filename, 'r', encoding="utf-8") as file:
-        n_lines = 0
-        for lines in file:
-            n_lines += 1
-
-        file.seek(0)
-        if nb_lines <= 0 or nb_lines >= n_lines:
-            file_data = file.read()
-            print(file_data, end="")
-        else:
-            for line in range(nb_lines):
-                file_data = file.readline()
-                print(file_data, end='')
+    with open(filename, 'a', encoding="utf-8") as file:
+        return file.write(text)
