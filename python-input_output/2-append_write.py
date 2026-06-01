@@ -11,7 +11,6 @@ def append_write(filename="", text=""):
     Args:
         filename (str, optional): The file to append to. Defaults to "".
         text (str, optional): The text to append. Defaults to "".
-    
     Returns:
         int: Number of characters added
     """
